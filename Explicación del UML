@@ -1,0 +1,13 @@
+En el UML partiremos de la clase Prendas, pues es el eje de un atuendo. 
+Interpreté a Prendas como una clase padre de otros tipos de prendas (ej. prendas superiores; prendas inferiores; zapatos). 
+Prendas tiene color, estampado y un look (el estampado puede o no tener, por ende es booleano; y el look está como int pues 0 sería formal, 1 semi-formal, 2 casual)
+Todos los atributos con sus respectivos getters y setters. 
+En las clases hijo, como prendas superiores, pueden tener mangas cortas (1), mangas largas (2), o sin mangas (0); y el tipo se refiere a: top/playera; chamarra; sudadera; saco; suéter; etc...
+En prendas inferiores tenemos largo, que puede ser corto (mini-shorts: 0), medio (bermudas: 1), largo(jeans: 2). Y material (mesclilla; pants; tela; etc...)
+En calzado sólo incluí si se requieren calcetas o no, pues creo que es lo más relevnte, exceptuando lo que ya tiene la clase madre: color, estampado y look. 
+
+En la clase Clóset hay un arreglo de prendas, y una prenda selecionada. Por ende, se pueden agregar y quitar prendas, y seleccionar y deseleccoinar. 
+
+Finalmente, en la clase atuendo tiene como atributos para tomar en cuenta la temperaturaen int; el código o si es formal el atuendo (cabe mencionar la distincción de este atributo con el look de las prendas)
+El look de las prendas se refiere al tipo de cada prenda, y código en Atuendo se refiere al código de vestimenta. Pues dependiendo del código de vestimenta, podemos meter cietas combinaciones de looks de prendas. 
+Además, toma la prenda ancla como eje y guarda las demás prendas seleccionadas en un arreglo de atuendo. 
