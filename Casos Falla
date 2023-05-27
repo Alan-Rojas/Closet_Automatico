@@ -1,0 +1,11 @@
+Como todo proyecto, este no está excento de limitciones. Las limitantes del proyecto que yo encuentro son las siguientes: 
+
+El proyecto no es capaz de diferenciar una prenda superior de otra. Es decir, en la vida real uno puede combiar sin problema una playera con una chamarra: sin embargo, en este proyecto no es tan fácil.  
+Si bien el programa sí puede admitir un atuendo que tenga 2 prendas superiores, no está diseñado para revisar si dichas prendas son compatibles. 
+Ej. Es posible guardar una playera blanca (Prenda Superior) y una chamarra de cuero (Prenda superior) en un mismo atuendo; 
+pero a su vez, es posible guardar una playera blanca, una playera gris y una sudadera verde en un mismo atuendo.
+
+Además, el proyecto podría tener ciertas fallas en el código de vestimenta: me explico. 
+Si bien un look casual puede ser interpretado como 2 prendas casuales y dos fomrmales, no hay manera precisa de controlar que lo que arroje el programa tenga sentido. 
+Ej. Un look que puede arrojar el proyecto, que no sea casual, pueden ser unos zapatos formales, con pants, un saco y una playera del Real Madrid. 
+Por ende, el proyecto quizás pueda tener fallas cuando se refiere a códigos de vestimenta con looks distintos. 
