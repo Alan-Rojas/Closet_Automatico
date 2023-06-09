@@ -13,3 +13,10 @@ Puede ser útil no sólo para personas que no sepan qué ponerse en la mañana c
 # Mejoras a futuro
 Será interesante ver cómo este programa pueda evolucionar y cambiar cuando se le introduzca un parámetro de "combinación". En términos simples, que el programa aprenda a combinar ropa. Ahora mismo, por la complejidad y variabilidad de maneras y "reglas" al combinar ropa, no será implementado en el programa. 
 Un gran paso que podría tener este proyecto en un futuro podría ser la implementación de machine-learning en el programa, aprendiendo de moda y combinaciones existentes, y por ende, dando un resultado más acorde a la época. 
+
+
+
+# Correcciones realizadas
+
+Se realizó la corrección de casos dónde el programa puede fallar, en el archivo "Casos Falla". 
+Se corrigió el UML, dónde ya hay ahora una relación directa entre atuendo y prenda.  
