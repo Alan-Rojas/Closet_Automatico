@@ -20,36 +20,36 @@ using namespace std;
 
 class Closet {
     private: 
-        Prendas prendas_c[0];
-        Atuendo atuendos[0];
+        int numero_prendas, numero_atuendos;
+        Prendas *prendas[0];
+        Atuendo *atuendos[0];
     public: 
-        Prendas get_prendas_c(int n) {
-            return prendas_c[n];
+        Closet (): numero_prendas(0) {
+            }; 
+        
+        Prendas *get_prenda(int n){
+            return prendas[n];
         }
         Atuendo get_atuendos(int n) {
-            return atuendos[n];
-        }
-        void set_prendas_c(Prendas x, int n) {
-            prendas_c[n] = x;
-        }
-        void set_atuendos(Atuendo x, int n) {
-            atuendos[n]= x;
+            return *atuendos[n];
         }
 
-        void agrega_prenda(Prendas x){
-            prendas_c.append(x);
+        void agrega_prenda(Prendas *x){
+            prendas[numero_prendas]=x;
+            numero_prendas++;
         }
-        void agrega_atuendo(Atuendo x) {
-            atuendos.append(x);
+        void agrega_atuendo(Atuendo *x) {
+            atuendos[numero_atuendos]=x;
+            numero_atuendos++;
 
         }
-        void deshecha_prenda(Prendas x) {
-            Prendas *ptrx = &x;
-            prendas_c.pop(ptrx);
+        void deshecha_prenda(Prendas *x) {
+            delete x;
+            numero_prendas--;
         }
-        void deshecha_atuendo(Atuendo x){
-            Atuendo *ptrx =&x;
-            atuendos.pop(ptrx);
+        void deshecha_atuendo(Atuendo *x){
+            delete x;
+            numero_atuendos--;
         }
 };
 
