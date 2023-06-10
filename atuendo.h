@@ -18,14 +18,13 @@ using namespace std;
 
 class Atuendo {
     private: 
-        int temperatura, no_prendas;
+        int temperatura, no_prendas; /* Temperatura en la que portarías dicho atuendo, para saber, dependiendo de la temperatura, qué atuendos usar.*/
         string codigo;
-        Prendas prenda_ancla;
-        Prendas atuendo[5];
+        Prendas *atuendo[4];
 
     public: 
-    Atuendo(): temperatura(0), codigo(""), prenda_ancla(), no_prendas(0), atuendo(){};
-    Atuendo(int temp, string cod, Prendas pa, int no_p, Prendas at[]): temperatura(temp), codigo(cod), prenda_ancla(pa), no_prendas(no_p), atuendo(){};
+    Atuendo(): temperatura(0), codigo(""), no_prendas(0){};
+    Atuendo(int temp, string cod, int no_p): temperatura(temp), codigo(cod), no_prendas(no_p){ atuendo[no_p];};
 
     int get_tmperatura(){
         return temperatura;
@@ -35,9 +34,6 @@ class Atuendo {
     }
     int get_no_prendas() {
         return no_prendas;
-    }
-    Prendas get_prenda_ancla() {
-        return prenda_ancla;
     }
 
     void set_temperatura(int tem) {
@@ -49,21 +45,21 @@ class Atuendo {
     void set_no_prendas(int no_p){
         no_prendas = no_p;
     }
-    void set_prenda_ancla(Prendas pa){
-        prenda_ancla = pa;
-    }
 
-    void agregar_prenda(string col, bool est, int lo){
-        atuendo.append(Prendas(col, est, lo));
+    void agregar_prenda(Prendas *x){
+        atuendo[no_prendas]=x;
         no_prendas++;
     }
-    void deshechar_prenda(Prendas x){
-        atuendo.pop(x);
+    void deshechar_prenda(Prendas *x){
+        delete x;
         no_prendas--;
     }
-}; // No entiendo muy bien cómo puedo hacer que esto funcione. Básicamente debería de ser capaz de agregar la prenda al arreglo de prendas. Pero me marca que el error está en la declaración del arreglo en sí, pero no comprendo el cómo solucionarlo.
+    void muestra_atuendo(){
+        for (int i=0; i<=no_prendas, i++;){
+            atuendo[i]->muestra_prenda();
+        }
+    }
+}; 
 
 
 #endif
-
-
