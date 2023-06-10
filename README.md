@@ -3,7 +3,7 @@
 Este proyecto consiste básicamente en tomar un clóset, con sus respectivas prendas, para armar una combinación de ropa que uno se pueda poner en x día. 
 
 ¿Cómo funciouna? Tras haber cargado tus prendas de tu clóset en el programa, (cabe mencionar que las prendas serán deshechables y agregables) el programa recibe un input de preferencias y parámetros para tomar la decisión de qué combinación tomar en cuenta.
-Es decir, para la creación del atuendo se toma como eje central la prenda preferencia (ej. playera roja); posteriormente se responden preguntas cómo: ¿Hará frío, calor, o estará templado?, ¿Debe ser el atuendo formal, semi-formal o casual? Y con esos parámetras será que el programa devuelva el atuendo final. 
+Es decir, para la creación del atuendo se responden preguntas cómo: ¿Hará frío, calor, o estará templado?, ¿Debe ser el atuendo formal, semi-formal o casual? Y con esos parámetras será que el programa devuelva el atuendo final. 
 
 # Funcionalidades
 
@@ -19,4 +19,4 @@ Un gran paso que podría tener este proyecto en un futuro podría ser la impleme
 # Correcciones realizadas
 
 Se realizó la corrección de casos dónde el programa puede fallar, en el archivo "Casos Falla". 
-Se corrigió el UML, dónde ya hay ahora una relación directa entre atuendo y prenda.  
+Se corrigió el UML, dónde ya hay ahora una relación directa entre atuendo y prenda, además de la eliminación del concepto prenda_ancla. Esto hace más práctico el programa y fácil de usar.  
