@@ -2,7 +2,7 @@
 Alan Rojas López 
 A01706146
 
-26/05/2023
+16/06/2023
 
 Declaración de clase closet
 
