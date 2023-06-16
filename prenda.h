@@ -2,7 +2,7 @@
 Alan Rojas López 
 A01706146
 
-09/06/2023
+16/06/2023
 
 Declaración de clase Prendas
 
@@ -121,9 +121,10 @@ class Calzado: public Prendas {
             calcetas = cal;
         }
         void muestra_prenda(){
-            cout<<"Calzado: \n""\tColor: "<<color<<"Estampado: "<<estampado<<"\tCalcetas: "<<calcetas<<"\tLook: "<<look<<"\n";
+            cout<<"Calzado: \n""\tColor: "<<color<<"\tEstampado: "<<estampado<<"\tCalcetas: "<<calcetas<<"\tLook: "<<look<<"\n";
         }
+
 };
 
 
-#endif 
+#endif
