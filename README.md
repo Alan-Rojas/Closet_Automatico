@@ -20,3 +20,6 @@ Un gran paso que podría tener este proyecto en un futuro podría ser la impleme
 
 Se realizó la corrección de casos dónde el programa puede fallar, en el archivo "Casos Falla". 
 Se corrigió el UML, dónde ya hay ahora una relación directa entre atuendo y prenda, además de la eliminación del concepto prenda_ancla. Esto hace más práctico el programa y fácil de usar.  
+
+Se hicieron correcciones finales en los archivos, tanto los headers o declaraciones de clases, como en el main. 
+Nótese la desaparición de la función muestra_atuendo(), pues no supe cómo solucionar el error que tenía, y opté por mejor mostrar las prendas de manera individual mejor, y no de manera colectiva. De esa manera el programa es capaz de mostrar ya el atuendo. 
