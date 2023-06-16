@@ -2,7 +2,8 @@
 Alan Rojas López 
 A01706146
 
-26/05/2023
+
+16/06/2023
 
 Declaración de clase Atuendo
 
@@ -26,7 +27,9 @@ class Atuendo {
     Atuendo(): temperatura(0), codigo(""), no_prendas(0){};
     Atuendo(int temp, string cod, int no_p): temperatura(temp), codigo(cod), no_prendas(no_p){ atuendo[no_p];};
 
-    int get_tmperatura(){
+
+
+    int get_temperatura(){
         return temperatura;
     }
     string get_codigo() {
@@ -54,11 +57,7 @@ class Atuendo {
         delete x;
         no_prendas--;
     }
-    void muestra_atuendo(){
-        for (int i=0; i<=no_prendas, i++;){
-            atuendo[i]->muestra_prenda();
-        }
-    }
+
 }; 
 
 
